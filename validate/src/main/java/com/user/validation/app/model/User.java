@@ -44,6 +44,10 @@ public class User {
     @Min(value = 18, message = "Age must be at least 18")
     @Max(value = 60, message = "Age must be no more than 60")
     private Integer age;
+    
+    
+    @Pattern(regexp= "^(0/91)?[7-9][0-9]{9}$", message="write properly mobile number " )
+    private String contact;
 	
 	
 	
